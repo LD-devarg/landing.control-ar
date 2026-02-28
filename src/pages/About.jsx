@@ -34,7 +34,7 @@ const slides = [
     subtitle: "Caja e indicadores en un mismo panel",
     description:
       "Consolida ingresos, egresos y retiros en una lectura clara de margen real.",
-    image: "/recorte-stats-pauta-3.png",
+    image: "/recorte-stats.png",
     alt: "Vista de metricas de pauta 3",
     tipoEstructura: "financiera",
     bullets: [

@@ -2,9 +2,10 @@ import { motion } from 'motion/react';
 import Button from '@mui/material/Button';
 import PlayCircleFilledWhiteOutlinedIcon from '@mui/icons-material/PlayCircleFilledWhiteOutlined';
 import AddIcCallOutlinedIcon from '@mui/icons-material/AddIcCallOutlined';
+import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 
 
-export default function Home({ onNavigate }) {
+export default function Home({ onNavigate, onOpenDemo }) {
     return (
         <div className="h-[calc(100vh-20%)] lg:h-screen backdrop-blur-[3px] w-full flex items-center justify-center">
             <div className='flex flex-col lg:flex-row mt-[calc(100vh/4)] lg:mt-25 w-full h-full items-center justify-between'>
@@ -24,7 +25,7 @@ export default function Home({ onNavigate }) {
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.8, delay: 1 }}
                     >Tu operativa, tus resultados, al alcance de tu mano.</motion.p>
-                    <div className='flex flex-row gap-3'>
+                    <div className='flex flex-wrap gap-3'>
                         <Button
                             className="px-2 lg:px-6 py-3 bg-blue-700 text-white font-semibold rounded-lg shadow-md hover:bg-blue-900 hover:text-white transition duration-300"
                             onClick={() => onNavigate?.('problems')}
@@ -42,6 +43,14 @@ export default function Home({ onNavigate }) {
                             endIcon={<AddIcCallOutlinedIcon />}
                         >
                             Contactar Asesor
+                        </Button>
+                        <Button
+                            className="px-2 lg:px-6 py-3 bg-blue-700 text-white font-semibold rounded-lg shadow-md hover:bg-blue-900 hover:text-white transition duration-300"
+                            onClick={onOpenDemo}
+                            variant="contained"
+                            endIcon={<VisibilityOutlinedIcon />}
+                        >
+                            Probar Demo
                         </Button>
                     </div>
                 </div>
