@@ -72,7 +72,7 @@ export default function Us() {
     const [selectedUnit, setSelectedUnit] = useState(null);
 
     return (
-        <div className="relative w-full px-3 pb-10 pt-22 sm:px-4 md:px-8 lg:px-12">
+        <div className="relative w-full px-3 pb-2 pt-22 sm:px-4 md:px-8 lg:px-12">
             <div className="mb-3 flex w-full justify-center sm:mb-4">
                 <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-blue-300 sm:text-xs sm:tracking-[0.28em]">
                     Quienes somos
@@ -149,7 +149,7 @@ export default function Us() {
             />
 
             <footer>
-                <div className="w-full pt-4">
+                <div className="w-full pt-2">
                     <p className="text-center text-xs text-slate-400 sm:text-sm">
                         &copy; 2026 LD.dev. Todos los derechos reservados.
                     </p>
