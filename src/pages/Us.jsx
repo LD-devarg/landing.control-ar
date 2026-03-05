@@ -6,10 +6,10 @@ const ldCapabilities = [
     "Desarrollo de software propio",
     "Arquitectura multiempresa",
     "Sistemas orientados a control",
-    "Diseno enfocado en operacion",
-    "Analisis de datos para decision",
+    "Diseño enfocado en operacion",
+    "Análisis de datos para decisión",
     "Ciencia de datos aplicada a negocio",
-    "Consultoria administrativa y financiera",
+    "Consultoría administrativa y financiera",
 ];
 
 const ecosystemUnits = [
@@ -18,7 +18,7 @@ const ecosystemUnits = [
         image: "/web_fondo_negro.png",
         alt: "Vista del area web",
         description:
-            "Diseno y desarrollo de aplicaciones web, ecommerce, plataformas digitales y soluciones a medida.",
+            "Diseño y desarrollo de aplicaciones web, ecommerce, plataformas digitales y soluciones a medida.",
         className:
             "inline-block bg-gradient-to-b from-green-950 to-lime-400 bg-clip-text text-transparent",
     },
@@ -36,7 +36,7 @@ const ecosystemUnits = [
         image: "/data_fondo_negro.png",
         alt: "Vista del area data",
         description:
-            "Modelado y consolidacion de datos para convertir informacion dispersa en decisiones accionables para negocio y equipo.",
+            "Modelado y consolidación de datos para convertir información dispersa en decisiones accionables para negocio y equipo.",
         className:
             "inline-block bg-gradient-to-r from-zinc-700/80 via-slate-200 to-zinc-700/80 bg-clip-text text-transparent",
     },
@@ -45,7 +45,7 @@ const ecosystemUnits = [
         image: "/ops_fondo_negro.png",
         alt: "Vista del area ops",
         description:
-            "Diseno de procesos operativos y automatizaciones para reducir friccion, estandarizar tareas y escalar con trazabilidad.",
+            "Diseño de procesos operativos y automatizaciones para reducir fricción, estandarizar tareas y escalar con trazabilidad.",
         className:
             "inline-block bg-gradient-to-r from-orange-900 to-orange-400 bg-clip-text text-transparent",
     },
@@ -54,7 +54,7 @@ const ecosystemUnits = [
         image: "/bsns_fondo_negro.png",
         alt: "Vista del area bsns",
         description:
-            "Capa estrategica del ecosistema: definicion de indicadores, estructura financiera y direccion para crecimiento sostenible.",
+            "Capa estratégica del ecosistema: definición de indicadores, estructura financiera y dirección para crecimiento sostenible.",
         className:
             "inline-block bg-gradient-to-r from-slate-400 via-slate-700 to-slate-400 bg-clip-text text-transparent",
     },
@@ -91,14 +91,11 @@ export default function Us() {
 
                 <section className="mt-4 grid items-stretch gap-4 sm:gap-5 lg:mt-5 lg:grid-cols-[2fr_1fr]">
                     <article className="rounded-2xl border border-white/10 bg-black/25 p-4 sm:p-6">
-                        <h3 className="text-xl font-semibold text-slate-100 sm:text-2xl md:text-3xl">
-                            <span className="font-anton text-4xl tracking-wide text-white sm:text-5xl">LD</span>
-                            <span className="ml-1 inline-block bg-gradient-to-r from-blue-300 to-blue-950 bg-clip-text font-anton text-xl font-light tracking-wider text-transparent sm:text-2xl">
-                                .dev
-                            </span>
-                        </h3>
+                        <div className="flex justify-center h-25 w-25 mb-0">
+                            <img src="/dev_blanco_sf.png" alt="Logo LD.dev" />
+                        </div>
 
-                        <ul className="mt-4 grid grid-cols-1 gap-y-2 text-sm text-slate-300 sm:mt-5 sm:grid-flow-col sm:grid-rows-4 sm:gap-x-8 sm:gap-y-3 sm:text-base md:text-lg">
+                        <ul className="grid grid-cols-1 gap-y-2 text-sm text-slate-300 sm:grid-flow-col sm:grid-rows-4 sm:gap-x-8 sm:gap-y-3 sm:text-base md:text-lg">
                             {ldCapabilities.map((item) => (
                                 <motion.li key={item} {...listItemAnimation}>
                                     {item}
@@ -149,10 +146,16 @@ export default function Us() {
             />
 
             <footer>
-                <div className="w-full pt-2">
+                <div className="w-full flex flex-col items-center gap-2 pt-2">
                     <p className="text-center text-xs text-slate-400 sm:text-sm">
                         &copy; 2026 LD.dev. Todos los derechos reservados.
                     </p>
+                    <a
+                        href="/politica-privacidad"
+                        className="text-center text-xs text-slate-400 underline underline-offset-2 transition-colors hover:text-slate-200 sm:text-sm"
+                    >
+                        Política de Privacidad
+                    </a>
                 </div>
             </footer>
         </div>
